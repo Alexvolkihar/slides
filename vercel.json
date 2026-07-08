@@ -1,0 +1,10 @@
+{
+  "buildCommand": "pnpm build",
+  "outputDirectory": "dist",
+  "redirects": [
+    { "source": "/", "destination": "https://alexvolkihar.ovh", "permanent": false }
+  ],
+  "rewrites": [
+    { "source": "/2026/hexagonal-architecture/:path*", "destination": "/2026/hexagonal-architecture/index.html" }
+  ]
+}

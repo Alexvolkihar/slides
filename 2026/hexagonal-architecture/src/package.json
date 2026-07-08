@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "tsx ../../../scripts/build-deck.ts /2026/hexagonal-architecture/",
+    "export": "slidev export"
+  }
+}

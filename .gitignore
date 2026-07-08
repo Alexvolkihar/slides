@@ -1,0 +1,8 @@
+node_modules
+dist
+dist-stale
+*.local
+.vite-inspect
+.remote-assets
+components.d.ts
+.vercel
