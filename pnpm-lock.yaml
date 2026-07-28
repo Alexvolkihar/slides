@@ -36,6 +36,8 @@ importers:
         specifier: ^3.5.0
         version: 3.5.39(typescript@5.9.3)
 
+  2026/atomic-design/src: {}
+
   2026/hexagonal-architecture/src: {}
 
 packages:

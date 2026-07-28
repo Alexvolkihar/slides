@@ -1,0 +1,64 @@
+:root {
+  --slidev-code-padding: 8px 10px;
+}
+
+.dark {
+  --slidev-code-background: #16161680 !important;
+}
+
+.dark #slide-content {
+  background-color: black !important;
+}
+
+.light {
+  --slidev-code-background: #f5f5f580 !important;
+}
+
+.slidev-code {
+  backdrop-filter: blur(10px);
+  border: 1px solid #8882;
+}
+
+.dark .slidev-layout :not(pre) > code {
+  color: rgb(201, 158, 251);
+  background: #161616ee;
+}
+
+.light .slidev-layout :not(pre) > code {
+  color: rgb(126, 34, 206);
+  background: #f0f0f0ee;
+}
+
+/* Click reveal transitions */
+.slidev-vclick-target {
+  transition:
+    opacity 500ms ease,
+    filter 200ms ease,
+    color 300ms ease;
+}
+
+.slidev-vclick-hidden {
+  opacity: 0;
+  pointer-events: none;
+  filter: blur(3px);
+}
+
+/* Slide transitions */
+.fade-out-leave-active {
+  transition:
+    opacity calc(var(--slidev-transition-duration) * 0.6) ease-out,
+    filter 200ms ease;
+}
+
+.fade-out-enter-active {
+  transition:
+    opacity calc(var(--slidev-transition-duration) * 0.8) ease-in,
+    filter 200ms ease;
+  transition-delay: calc(var(--slidev-transition-duration) * 0.6);
+}
+
+.fade-out-enter-from,
+.fade-out-leave-to {
+  opacity: 0;
+  filter: blur(5px);
+}
